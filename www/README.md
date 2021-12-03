@@ -1,6 +1,6 @@
 # Site blog 
-Le site est réalisé dans le cadre du cours Conception réalisation de projet numérique : https://akaiorizuru.github.io/blogsite/www/index.html
-
+Le site est réalisé dans le cadre du cours Conception réalisation de projet numérique : https://akaiorizuru.github.io/Vert/www/index.html
+Une version de test de ce site se trouve à l'adresse : https://akaiorizuru.github.io/blogsite/www/index.html
 
 ## Sommaire 
 * [Liens utiles](#Liens-utiles)
