@@ -59,6 +59,13 @@ footer#main-footer {
 }
 
 /****************** Social links ******************/
+
+.imgnote{
+	width: 100%;
+  height: auto;
+  padding-bottom: 3em;
+}
+
 .social-links {
 	list-style: outside none none;
 	margin: 0 0 30px;
