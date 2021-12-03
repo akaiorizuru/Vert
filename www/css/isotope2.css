@@ -29,7 +29,7 @@
 	background: #509b9e none repeat scroll 0 0;
 	left: 0;
 	right : 0;
-	opacity: 0;
+	opacity: 1;
 	padding: 0;
 	position: absolute;
 	top: 0;
@@ -46,7 +46,7 @@
 .grid-item .hover-mask .project-title {
 	opacity: 0;
 	transform: translateY(100px);
-	transition: all 0.5s ease-out 0s;
+	transition: all 0.2s ease-out 0s;
 }
 .grid-item:hover .hover-mask .project-title {
 	opacity: 1;
@@ -55,7 +55,7 @@
 .grid-item .hover-mask p {
 	opacity: 0;
 	transform: translateY(100px);
-	transition: all 0.3s ease-out 1s;
+	transition: all 0.1s ease-out 0.5s;
 }
 .grid-item:hover .hover-mask p {
 	opacity: 1;
