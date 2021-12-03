@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Waypoints</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./lib/bootstrap-4.3.1/css/bootstrap.css">
+		<link href="./css/utils.css" rel="stylesheet">
+		<style type="text/css">
+			section {
+				height : 500px;
+				border-bottom: 7px solid #f28c83;
+				background-color: blue;
+				padding: 70px 0;
+				position: relative;
+				z-index: 1;
+			}
+			section::after {
+				content:'';
+				display: block;
+				left : 0;
+				right : 0;
+				top : 70px;
+				bottom : 70px;
+				background-color: green;
+				position : absolute;
+				z-index : -1;		
+			}
+		</style>
+	</head>
+	<body>
+		<section id="services"><h1>Services</h1></section>
+		<section id="about"><h1>About</h1></section>			
+		<section id="skills"><h1>Skills</h1></section>
+		<section id="portfolio"><h1>Portfolio</h1></section>		
+		<section id="contact"><h1>Contact</h1></section>
+		<section id="stats"><h1>Stats</h1></section>
+		
+		<ul class="notifications"></ul>	
+
+		<script src="./lib/jquery/jquery-3.4.1.js"></script>
+		<script src="./lib/jquery.waypoints/jquery.waypoints.js"></script>
+		<script src="./lib/jquery.waypoints/waypoints.debug.js"></script>
+		<script src="./js/utils.js"></script>		
+		
+		<script>
+		$(document).ready(function() {
+			$('section#about').waypoint( function(direction) {
+					// code à exécuter 
+					console.log('toto') ;
+			}, {offset: '70px' });
+			
+			$notifications = $('.notifications');
+			
+			// à compléter pour afficher un message à l’apparition de chaque section lors du défilement vers le bas.
+			$("section").waypoint(function(direction) {
+				if (direction == "down") {
+					notify('section "' + this.element.id + '" defilement vers le bas');
+				}
+				else{
+
+					notify('section "' + this.element.id + '" defilement vers le haut');
+				}
+
+			});
+
+			// à compléter pour afficher un message à lorsque le bas de la section coïncide avec le bas du viewport lors du défilement vers le haut
+			$("section").waypoint(function(direction) {
+				notify('section ' + this.element.id + ' en bas du viewport');
+			},{offset: 'bottom-in-view'});			
+		});
+		</script>
+	</body>
+</html>

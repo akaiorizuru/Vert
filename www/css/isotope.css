@@ -1,0 +1,47 @@
+#portfolio {
+	color: white;
+	text-transform: uppercase;
+	padding-top: 3em;
+	background-image: url("../images/background.jpg");
+}
+
+#portfolio #portfolio-filter {
+	margin-bottom: 2em;
+}
+
+#portfolio #portfolio-filter a {
+	text-decoration: none;
+	color: white;
+	padding: 0 15px;
+}
+
+#portfolio #portfolio-filter a.active {
+	color: #509b9e;
+}
+
+.grid-item {
+	margin-bottom: 0.5em;
+	padding: 0;
+	border: 2px solid hsla(0, 0%, 0%, 0.5);
+	position: relative;
+}
+
+.grid-item .hover-mask .project-title {
+	color: #fff;
+	font-size: 2em;
+	font-weight: 400;
+	line-height: 2.5em;
+	margin: 90px 0 0;
+	padding: 10px;
+	text-align: center;
+}
+
+
+.grid-item .hover-mask p {
+	font-size: 1.2em;
+	font-weight: 400;
+	line-height: 1.6em;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}

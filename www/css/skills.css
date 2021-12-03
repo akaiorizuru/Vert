@@ -1,0 +1,38 @@
+.skills-graph {
+	height: 350px;
+	margin-top: 20px;
+	position: relative;
+	opacity: 0;
+	transition: opacity 1.2s ease-out 0s;
+}
+
+.skills-item {
+	border-right: 3px solid #fff;
+	bottom: 0;
+	height : 0;
+	position: absolute;
+	transition: height 1.2s ease-in-out 0s;
+}
+
+.skills-item:nth-child(2n) {
+	background-color: #f28c83;
+}
+.skills-item:nth-child(2n+1) {
+	background-color: #509b9e;
+}
+
+.percent {
+	display: block;
+	font-size: 1.2em;
+	position: absolute;
+	text-align: center;
+	top: -30px;
+	width: 100%;
+}
+
+.skills-item>p {
+	bottom: -40px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}

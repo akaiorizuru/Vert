@@ -1,0 +1,28 @@
+#stats {
+	background: url("../images/background-img-6.jpg");
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	padding: 40px 0;
+	color: white;
+}
+
+#stats::after {
+	background-color: rgba(0, 0, 0, 0.5);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+}
+
+#stats .container {
+	position: relative;
+	z-index: 4;
+	color: white;
+}

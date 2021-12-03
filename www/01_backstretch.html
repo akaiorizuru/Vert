@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Backstretch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./lib/bootstrap-4.3.1/css/bootstrap.css">
+	<link href="./css/backstretch.css" rel="stylesheet">
+	<style type="text/css">
+		section {
+			height: 400px;
+		}		
+		section:nth-child(2n) {
+			background-color: white;
+		}
+		section:nth-child(2n+1) {
+			background-color: rgba(0,0,0,0.3);
+		}
+	</style>
+</head>
+<body>
+	<header id="home">
+		<div class="container">
+			<p>Bienvenue sur</p>
+			<h1>Mon site personnel</h1>
+			<p>bla bla...</p>
+		</div>
+	</header>
+	<section></section>
+	<section></section>
+	<section></section>
+	<section></section>
+	<script src="./lib/jquery/jquery-3.4.1.js"></script>
+	<script src="./lib/jquery.backstretch/jquery.backstretch.js"></script>
+	<script src="./js/backstretch.js"></script>
+</body>
+</html>

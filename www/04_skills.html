@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link href="./css/skills.css" rel="stylesheet">
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<div class="skills-graph">
+			<div class="skills-item">
+				<span data-percent="75" class="percent">75%</span>
+				<p>Photoshop</p>
+			</div>
+			<div class="skills-item">
+				<span data-percent="70" class="percent">70%</span>
+				<p>Illustrator</p>
+			</div>
+			<div class="skills-item">
+				<span data-percent="90" class="percent">90%</span>
+				<p>HTML</p>
+			</div>
+			<div class="skills-item">
+				<span data-percent="60" class="percent">60%</span>
+				<p>CSS</p>
+			</div>
+			<div class="skills-item	">
+				<span data-percent="30" class="percent">30%</span>
+				<p>CSS3</p>
+			</div>			
+		</div>
+		
+		<script type="text/javascript" src="./lib/jquery/jquery-3.4.1.js"></script>	
+		<script type="text/javascript" src="./js/skills.js"></script>
+		<script>
+		$(document).ready(function() {
+			$(window).click(function() {
+				affiche_skills();
+			});			
+		});
+		</script>
+	</body>
+</html>

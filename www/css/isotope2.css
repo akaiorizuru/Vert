@@ -1,0 +1,73 @@
+#portfolio {
+	position: relative;
+	z-index: 2;
+	background-size: cover;
+}
+
+#portfolio::after {
+	background-color: rgba(0, 0, 0, 0.5);
+	content: "";
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	right: 0;
+	bottom: 0;
+}
+
+#portfolio .container {
+	position: relative;
+	z-index: 4;
+}
+
+.grid-item {
+	overflow: hidden;
+}
+
+/* hover-mask (should be transparent by default) */
+.grid-item .hover-mask {
+	background: #509b9e none repeat scroll 0 0;
+	left: 0;
+	right : 0;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	bottom : 0;
+	transition: opacity 0.3s ease-out 0s;
+}
+
+/* hover-mask should be shown when hovering .grid-item */
+.grid-item:hover .hover-mask {
+	opacity: 0.75;
+}
+
+/* Translation et opacité des textes du hover mask selon hover or not */
+.grid-item .hover-mask .project-title {
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 0.5s ease-out 0s;
+}
+.grid-item:hover .hover-mask .project-title {
+	opacity: 1;
+	transform: translateY(0px);
+}
+.grid-item .hover-mask p {
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 0.3s ease-out 1s;
+}
+.grid-item:hover .hover-mask p {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+
+/* La taille de l'image change au survol de la souris */
+.grid-item img {
+	transform: scale(1);
+	transition: transform 4s linear 0s;
+}
+.grid-item:hover img {
+	transform: scale(1.6);
+}

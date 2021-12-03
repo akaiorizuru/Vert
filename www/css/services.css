@@ -1,0 +1,41 @@
+/* Polaroid style: border, shadow and rotation */
+.polaroid {
+	border: 12px solid #fff;
+	box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.5);
+	transform: rotate(-5deg);
+}
+
+/* Service icon: size, colors, round border*/
+.service-icon {
+	display: block;
+	background: #334959 none repeat scroll 0 0;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 3em;
+	height: 150px;
+	width: 150px;
+	line-height: 150px;
+	margin: 20px auto 50px;
+	position: relative;
+	text-align: center;
+}
+
+/* service-icon:after is used to draw a circle around service icon*/
+.service-icon::after {
+	display: block;
+	content: "";
+	border: 3px solid #334959;
+	border-radius: 50%;
+	position: absolute;
+	height: 174px;
+	top: -12px;
+	width: 174px;
+	left: -12px;
+	pointer-events: none;
+}
+
+/*Icon rotates when hover*/
+.service-icon:hover [class*="fa"] {
+	transform: rotate(360deg);
+	transition: all 0.5s ease-out 0s;
+}

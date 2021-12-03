@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Animations</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./lib/bootstrap-4.3.1/css/bootstrap.css">
+	<link href="./css/animations.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<section>
+			<header class="scrollimation slide slide-up">
+				<h1>Section 1</h1>
+			</header>
+			<div class="row">			
+				<div class="col-12 scrollimation slide slide-right">
+					<img class="img-fluid" src="./images/test.jpg" alt="texte alternatif" />
+				</div>
+				<div class="col-12 scrollimation slide slide-left d3">
+					<img class="img-fluid" src="./images/test.jpg" alt="texte alternatif" />				
+				</div>
+			</div>		
+		</section>
+		<section>
+			<header class="scrollimation slide slide-down">
+				<h1>Section 2</h1>
+			</header>
+			<div class="row">			
+				<div class="col-12 scrollimation scale scale-in">
+					<img class="img-fluid" src="./images/rochers_du_diable.jpg" alt="texte alternatif" />
+				</div>
+				<div class="col-12 scrollimation scale scale-out d1">
+					<img class="img-fluid" src="./images/rochers_du_diable.jpg" alt="texte alternatif" />				
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="./lib/jquery/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function() {	
+			$(window).click(function() {
+				$('.scrollimation').toggleClass('in');
+			});
+		});
+	</script>
+
+</body>
+</html>

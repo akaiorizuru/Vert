@@ -1,0 +1,16 @@
+#main-nav.navbar-default {
+	margin-bottom: 0;
+}
+
+#main-nav.navbar-default .navbar-brand {
+	padding: 0;
+}
+
+#main-nav.navbar-default .nav a {
+	color: #6d6d6d;
+}
+
+#main-nav.navbar-default .nav a.active, #main-nav.navbar-default .nav a:hover
+	{
+	color: #509b9e;
+}

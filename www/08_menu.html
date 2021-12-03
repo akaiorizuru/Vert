@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu one-page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./lib/bootstrap-4.3.1/css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="./css/menu.css" rel="stylesheet">
+	<style type="text/css">
+		header {
+			height : 1000px;
+			margin-top: 56px;
+		}
+		section {
+			height : 400px;
+			border-top: 7px solid #f28c83;
+		}
+
+		@media ( min-width : 768px) {
+			.scrolltop {
+				display: none;
+				width: 100%;
+				margin: 0 auto;
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+			}
+			.scroll {
+				position: absolute;
+				right: 20px;
+				bottom: 20px;
+				background-color: rgba(178, 178, 178, 0.7);
+				padding: 20px;
+				cursor: pointer;
+			}
+		}			
+	</style>
+</head>
+<body>
+	<nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<span></span><!-- Elément vide pour décaler le toggler à droite -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link scrollto target-services" href="#services">Mes services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link scrollto target-about" href="#about">Qui suis-je ?</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link scrollto target-skills" href="#skills">Mes compétences</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link scrollto" href="#portfolio">Mes réalisations</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link scrollto" href="#contact">Me Contacter</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<header id="home"><h1>Home</h1></header>
+	<section id="services"><h1>Services</h1></section>
+	<section id="about"><h1>About</h1></section>			
+	<section id="skills"><h1>Skills</h1></section>
+	<section id="portfolio"><h1>Portfolio</h1></section>		
+	<section id="contact"><h1>Contact</h1></section>
+	<section id="stats"><h1>Stats</h1></section>
+	
+	<!-- Bouton retour en haut (pas affiché par défaut) -->
+	<div class="scrolltop">
+		<div class="scroll icon text-center">
+			<a href="#home"><i class="fas fa-2x fa-chevron-up"></i></a>
+		</div>
+	</div>
+
+	<script src="./lib/jquery/jquery-3.4.1.js"></script>
+	<script src="./lib/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>		
+	<script src="./lib/jquery.waypoints/jquery.waypoints.js"></script>
+	<script src="./js/menu.js"></script>
+	<script src="./js/scrollToTop.js"></script>
+	<script src="./js/utils.js"></script>				
+</body>
+</html>

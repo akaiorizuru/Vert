@@ -1,0 +1,161 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	color: #6d6d6d;
+	font-family: Raleway, Arial, sans-serif;
+	font-size: 90%;
+}
+
+.big-text {
+	font-size: 2empx;
+	font-weight: 300;
+	letter-spacing: 0.01em;
+	line-height: 62px;
+	text-transform: uppercase;
+	word-spacing: 0.15em;
+}
+
+#home {
+	color: white;
+}
+
+#home p {
+	font-size: 2em;
+}
+
+#home h1 {
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+section {
+	background-color: white;
+	padding-bottom: 70px;
+	padding-top: 50px;	
+}
+
+section#about {
+    background-color: #52ccba;
+}
+
+section#skills, section#portfolio, section#contact, section#stats {
+	border-bottom: 7px solid #f28c83;
+}
+
+section#services header {
+	margin-bottom: 80px;
+}
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+	top: 15px;
+}
+
+footer#main-footer {
+	background: #1f2c37 none repeat scroll 0 0;
+	padding-bottom: 40px;
+	padding-top: 50px;
+}
+
+/****************** Social links ******************/
+.social-links {
+	list-style: outside none none;
+	margin: 0 0 30px;
+	padding: 0;
+}
+
+.social-links li {
+	border-radius: 3px;
+	box-shadow: 0 4px 0 transparent;
+	display: inline-block;
+	margin: 0 5px;
+	transition: all 0.3s ease-out 0s;
+}
+
+.social-links li a {
+	background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+	border-radius: 50%;
+	color: rgba(255, 255, 255, 0.3);
+	display: block;
+	font-size: 1.8em;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	transition: all 0.3s ease-out 0s;
+	width: 50px;
+}
+
+.social-links li a:hover {
+	background: #509b9e none repeat scroll 0 0;
+	color: #fff;
+}
+
+/****************** Page Loader ******************/
+#page-loader {
+	background: #fff none repeat scroll 0 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 99999;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media ( min-width : 768px) {
+	.big-text {
+		font-size: 38px;
+	}
+	.percent {
+		font-size: 28px;
+		top: -60px;
+	}
+	.scrolltop {
+		display: none;
+		width: 100%;
+		margin: 0 auto;
+		position: fixed;
+		bottom: 20px;
+		right: 10px;
+		z-index :6;
+	}
+	.scroll {
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+		background-color: rgba(178, 178, 178, 0.4);
+		padding: 20px;
+		text-align: center;
+		margin: 0 0 0 0;
+		cursor: pointer;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media ( min-width : 992px) {
+	.big-text {
+		font-size: 3em;
+	}
+	.percent {
+		font-size: 2.5em;
+		top: -80px;
+	}
+	section {
+		padding-bottom: 140px;
+		padding-top: 100px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media ( min-width : 1200px) {
+	.big-text {
+		font-size: 4em;
+	}
+	.percent {
+		font-size: 3em;
+	}
+}

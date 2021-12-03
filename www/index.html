@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Site one-page complet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./lib/bootstrap-4.3.1/css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="./css/raleway.css" rel="stylesheet">
+	<link href="./css/animations.css" rel="stylesheet">
+	<link href="./css/backstretch.css" rel="stylesheet">
+	<link href="./css/isotope.css" rel="stylesheet">
+	<link href="./css/isotope2.css" rel="stylesheet">
+	<link href="./css/menu.css" rel="stylesheet">
+	<link href="./css/skills.css" rel="stylesheet">
+	<link href="./css/services.css" rel="stylesheet">
+	<link href="./css/statistiques.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+
+	<nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+		<span></span><!-- Elément vide pour décaler le toggler à droite -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link scrollto" href="#services">Mes services</a></li>
+				<li class="nav-item"><a class="nav-link scrollto" href="#about">Qui suis-je ?</a></li>
+				<li class="nav-item"><a class="nav-link scrollto" href="#skills">Mes compétences</a></li>
+				<li class="nav-item"><a class="nav-link scrollto" href="#portfolio">Mes réalisations</a></li>
+				<li class="nav-item"><a class="nav-link scrollto" href="#contact">Me Contacter</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<header id="home">
+		<div class="container text-center">
+			<p>Bienvenue sur</p>
+			<h1>Mon site personnel</h1>
+			<p>bla bla...</p>
+		</div>
+	</header>
+
+	<section id="services">
+		<div class="container">
+			<header class="text-center scrollimation slide slide-up">
+				<h1 class="big-text">Mes services</h1>
+			</header>
+			<div class="row">
+				<div class="col-md-4 col-sm-12 text-center service-item scrollimation scale scale-in d1">
+					<div class="service-icon"><i class="fa fa-lightbulb"></i></div>					
+					<h3>Brand Identity</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>					
+				</div>
+				<div class="col-md-4 col-sm-12 text-center service-item scrollimation scale scale-in d2">
+					<div class="service-icon"><i class="fa fa-desktop"></i></div>	
+					<h3>Brand Identity</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>					
+				</div>
+				<div class="col-md-4 col-sm-12 text-center service-item scrollimation scale scale-in d3">
+					<div class="service-icon"><i class="fa fa-rocket"></i></div>	
+					<h3>Brand Identity</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>					
+				</div>										
+			</div>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 scrollimation slide slide-right">
+					<img class="img-fluid polaroid" src="./images/student.jpg" alt="about me" />
+				</div>
+				<div class="col-sm-6 scrollimation slide slide-down d3">
+					<h1 class="big-text">I am J. Doe</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>					
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>					
+				</div>
+			</div>
+		</div>
+	</section>			
+	<section id="portfolio">
+		<div class="container">
+			<div class="row">
+				<header class="col-12 text-center">
+					<h1>Mon Portfolio</h1>
+				</header>
+				<ul id="portfolio-filter" class="list-inline text-center col-12">
+					<li class="list-inline-item"><a href="#" class="filter" data-filter="*">Tous</a></li>
+					<li class="list-inline-item"><a href="#" class="filter" data-filter=".category-1">En lien avec le cours</a></li>
+					<li class="list-inline-item"><a href="#" class="filter" data-filter=".category-2">En lien avec le thème vert</a></li>					
+				</ul>	
+				<div class="col-md-12">				
+					<div class="row grid">
+						<div class="grid-item grid-sizer category-1 col-md-4 col-sm-6 col-12">
+							<img class="img-fluid" src="./images/projets/thumb-1.png" alt="" />
+							<div class="hover-mask">
+								<h2 class="project-title">Project Title</h2><!--Project Title -->
+								<p>Project Subtitle</p><!--Project Subtitle -->
+							</div>						
+						</div>
+						<div class="grid-item category-2 col-md-4 col-sm-6 col-12">
+							<img class="img-fluid" src="./images/projets/thumb-2.png" alt="" />
+							<div class="hover-mask">
+								<h2 class="project-title">Project Title</h2><!--Project Title -->
+								<p>Project Subtitle</p><!--Project Subtitle -->
+							</div>							
+						</div>
+						<div class="grid-item category-1 col-md-4 col-sm-6 col-12">
+							<img class="img-fluid" src="./images/projets/thumb-3.png" alt="" />
+							<div class="hover-mask">
+								<h2 class="project-title">Project Title</h2><!--Project Title -->
+								<p>Project Subtitle</p><!--Project Subtitle -->
+							</div>	
+						</div>
+						<div class="grid-item category-2 col-md-4 col-sm-6 col-12">
+							<img class="img-fluid" src="./images/projets/thumb-4.png" alt="" />
+							<div class="hover-mask">
+								<h2 class="project-title">Project Title</h2><!--Project Title -->
+								<p>Project Subtitle</p><!--Project Subtitle -->
+							</div>	
+						</div>
+						<div class="grid-item category-1 col-md-4 col-sm-6 col-12">
+							<img class="img-fluid" src="./images/projets/thumb-5.png" alt="" />
+							<div class="hover-mask">
+								<h2 class="project-title">Project Title</h2><!--Project Title -->
+								<p>Project Subtitle</p><!--Project Subtitle -->
+							</div>	
+						</div>
+					</div>				
+				</div>
+			</div>		
+		</div>
+	</section>		
+	<section id="contact">
+		<div class="container">
+			<header>
+				<h1>Contact</h1>
+			</header>
+			<div class="row">
+				<div class="col-md-6">
+					<form id="footer-form" role="form">
+
+						
+<!-- 						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Enter email">
+							<div class="input-group-append">
+								<span class="input-group-text">
+									<i class="fa fa-envelope"></i>
+								</span>
+							</div>
+						</div> -->
+
+						<div class="form-group">
+							<label for="name" class="sr-only">Name</label>
+							<div class="input-group">
+								<input type="text" class="form-control" id="name" placeholder="Name">
+								<div class="input-group-append">
+									<span class="input-group-text">
+										<i class="fa fa-user"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="name" class="sr-only">Email</label>
+							<div class="input-group">
+								<input type="text" class="form-control" id="email" placeholder="Email">
+								<div class="input-group-append">
+									<span class="input-group-text">
+										<i class="fa fa-envelope"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="message" class="sr-only">Message</label>
+							<div class="input-group">
+								<textarea required="required" name="message" placeholder="Message" id="message" rows="6" class="form-control"></textarea>
+								<div class="input-group-append">
+									<span class="input-group-text"><i class="fa fa-pencil-alt"></i></span>
+								</div>
+							</div>
+						</div>
+
+						<input type="submit" class="btn btn-secondary" value="Send">
+					</form>					
+				</div>
+			</div>
+		</div>		
+	</section>
+	<section id="stats">
+		<div class="container">					
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<div class="scrollimation scale scale-in">
+						<i class="fas fa-desktop fa-2x"></i>
+						<h3>Projets</h3>
+						<span data-speed="3000" data-to="1525" class="counter">1525</span>					
+					</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="scrollimation scale scale-in">
+						<i class="fas fa-users fa-2x"></i>
+						<h3>Clients</h3>
+						<span data-speed="1000" data-to="60" class="counter">60</span>					
+					</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="scrollimation scale scale-in">
+						<i class="fas fa-users fa-2x"></i>
+						<h3>Downloads</h3>
+						<span data-speed="2000" data-to="90" class="counter">90</span>					
+					</div>
+				</div>									
+			</div>			
+		</div>
+	</section>
+
+	<footer id="main-footer">
+		<div class="container">
+			<ul class="social-links text-center">
+				<li><a href="#link"><i class="fab fa-twitter fa-fw"></i></a></li>
+				<li><a href="#link"><i class="fab fa-facebook fa-fw"></i></a></li>
+				<li><a href="#link"><i class="fab fa-google-plus fa-fw"></i></a></li>
+				<li><a href="#link"><i class="fab fa-dribbble fa-fw"></i></a></li>
+				<li><a href="#link"><i class="fab fa-linkedin fa-fw"></i></a></li>
+			</ul>
+			<p class="text-center">&copy; 2019 - All rights reserved</p>				
+		</div>
+	</footer>
+
+	<div class="scrolltop">
+		<div class="scroll icon"><a href="#home"><i class="fa fa-2x fa-chevron-up"></i></a></div>
+	</div>
+	
+	<ul class="notifications"></ul>	
+
+	<script src="./lib/jquery/jquery-3.4.1.js"></script>
+	<script src="./lib/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
+	<script src="./lib/jquery.backstretch/jquery.backstretch.js"></script>
+	<script src="./lib/isotope/isotope.pkgd.js"></script>
+	<script src="./lib/jquery.waypoints/jquery.waypoints.js"></script>
+	<script src="./lib/jquery.countTo/jquery.countTo.js"></script>
+	<script src="./js/utils.js"></script>
+	<script src="./js/backstretch.js"></script>
+	<script src="./js/isotope.js"></script>
+	<script src="./js/skills.js"></script>
+	<script src="./js/menu.js"></script>
+	<script src="./js/scrollToTop.js"></script>
+	<script src="./js/scripts.js"></script>						
+</body>
+</html>
