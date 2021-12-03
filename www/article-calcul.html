@@ -33,20 +33,43 @@
         <header id="home" >
             <div class="container text-center">
 
-                <h1>Notes de cours 20211117</h1>
+                <h1>Le nombre de possibilité de la couleur verte</h1>
             </div>
         </header>
         <section>
             <div class="container">
-                <div class="row ">
-                    <div>
-                        <p>Photo d'avion construite lors du cours </p>
-                        <img src="./images/cours2.3.jpg" alt="photo avion en papier" class="imgnote">
-                    </div>
-                    <div>
-                        <p>Screen shoot </p>
-                        <img src="./images/cours2.2.jpg" alt="Screenshoot note de cours" class="imgnote">
-                    </div>
+        <div class="single-article">
+            Si on considère dans le système rgb comme vert toutes les couleurs où la valeur V est strictement supérieur à R et B, combien existe-t-il de variante de vert?
+            <div>
+                <h3>Brouillon de réflexion</h3>
+                <img src="./images/calculNbVertBrouillonReflexion.jpg" alt="Brouillon de calcul du nombre de variante de vert " class="imgnote">
+            </div>
+            Pour cela, j'ai considéré qu'il est plus rapide de trouver ce résultat en passant par l'ordinateur pour qu'il puisse exécuté un programme algorithmique que de chercher manuellement ce résultat. <br>
+            pour vérifier si le programme fonctionne bien, je fais afficher les tableaux RGB trouvé qui corrspondent aux critères dans les boucles "pour", grâce à console.log(rgb[r,g,b])
+            <pre>
+                <code>
+                    ````js
+                    let r = 0; 
+                    let b = 0;
+                    let g = 0;
+                    let all = 0;
+                    for (let g = 0; g <= 10; g++) {
+                    // let green = g;
+                    for (let r = 0; r < g; r++) {
+                        for (let b = 0; b < g; b++) {
+                        all = all + 1;
+                        let rgb=[r,g,b]
+                        console.log(rgb);
+                        }
+                    }
+                    console.log(all)
+                    }
+                    ````
+                </code>
+            </pre>
+            Le résultat trouvé est : 5559680. <br> 
+            Il y a donc 5559680 variante possible de vert dans le système rgb.
+        </div>
                 </div>
             </div>
         </section>
