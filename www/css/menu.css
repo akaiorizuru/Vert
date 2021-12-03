@@ -9,6 +9,9 @@
 #main-nav.navbar-default .nav a {
 	color: #6d6d6d;
 }
+.nav-link{
+	font-size: 2em;
+}
 
 #main-nav.navbar-default .nav a.active, #main-nav.navbar-default .nav a:hover
 	{
